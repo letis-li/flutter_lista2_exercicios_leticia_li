@@ -5,4 +5,4 @@ Disciplina: Programação de Dispositivos Móveis
 
 Atividade: Lista de exercícios em Flutter, com List.
 
-Este repositório contém os exercícios 1 a 9 desenvolvidos conforme os conteúdos trabalhados em aula.
+Este repositório contém os exercícios de 1 a 5.
