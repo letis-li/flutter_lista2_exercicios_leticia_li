@@ -33,13 +33,27 @@ class CatalogoLivros extends StatelessWidget {
       Livro(titulo: 'Torto Arado', autor: 'Itamar Vieira Junior'),
       Livro(titulo: 'Mayombe', autor: 'Pepetela'),
       Livro(titulo: 'O Chamado de Cthulhu', autor: 'H. P. Lovecraft'),
-      Livro(titulo: 'O mistério dos sete relógios', autor:'Agatha Christie'),
-      Livro(titulo: 'Pegasus e o Fogo do Olimpo', autor:'Kate O Hearn'),
-      Livro(titulo: 'O Elefante desaparece', autor:'Haruki Murakami'),
-      Livro(titulo: 'E não sobrou nenhum', autor:'Agatha Christie'),
-      Livro(titulo: 'Um estudo em vermelho', autor:'Arthur Conan Doyle'),
-      Livro(titulo: 'O signo dos quatro', autor:'Arthur Conan Doyle'),
-      Livro(titulo: 'O pequeno príncipe', autor:'Antoine de Saint-Exupéry'),
+      Livro(titulo: 'O mistério dos sete relógios', autor: 'Agatha Christie'),
+      Livro(titulo: 'Pegasus e o Fogo do Olimpo', autor: 'Kate O Hearn'),
+      Livro(titulo: 'O Elefante desaparece', autor: 'Haruki Murakami'),
+      Livro(titulo: 'E não sobrou nenhum', autor: 'Agatha Christie'),
+      Livro(titulo: 'Um estudo em vermelho', autor: 'Arthur Conan Doyle'),
+      Livro(titulo: 'O signo dos quatro', autor: 'Arthur Conan Doyle'),
+      Livro(titulo: 'O pequeno príncipe', autor: 'Antoine de Saint-Exupéry'),
+    ];
+
+    final List<Color> cores = [
+      Colors.brown,
+      Colors.blueAccent,
+      Colors.green,
+      Colors.teal,
+      Colors.orange,
+      Colors.lightBlue,
+      Colors.deepOrange,
+      Colors.redAccent,
+      Colors.red,
+      Colors.yellow,
+      Colors.lightGreenAccent,
     ];
 
     return Scaffold(
@@ -52,7 +66,7 @@ class CatalogoLivros extends StatelessWidget {
 
           return Card(
             child: ListTile(
-              leading: const Icon(Icons.book, size: 35, color: Colors.green,),
+              leading: Icon(Icons.book, size: 35, color: cores[index]),
               title: Text(
                 livro.titulo,
                 style: const TextStyle(fontWeight: FontWeight.bold),
